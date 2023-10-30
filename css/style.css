@@ -89,6 +89,7 @@ header .bottom{
 */
 
 .section{
+    display: flex;
     min-height: 500px;
 }
 
@@ -96,6 +97,9 @@ main > section:nth-of-type(2) > .container{
 flex-direction: row-reverse;
 }
 
+.section:nth-of-type(2n+2){
+    background-color: #D3D3D3;
+}
 /* 
     DEBUG
 */
