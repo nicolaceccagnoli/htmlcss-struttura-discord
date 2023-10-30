@@ -25,31 +25,46 @@ html{
 /* 
     HEADER
 */
-.icons {
+
+.top{
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.icon {
-    flex-grow: calc(100% / 3);
+.icons{
+    display: flex;
+    width: 75%;
+}
+
+.icon{
+    flex-grow: 1;
+}
+
+.icon:nth-of-type(3){
+    display: flex;
+    justify-content: flex-end ;
+}
+
+.icon:nth-of-type(2){
+    flex-grow:2;
+    align-self: flex-end;
+    text-align: center;
 }
 
 /* 
     DEBUG
 */
 
-.debug .top{
+.debug header .top{
     background-color: #ADD8E6;
+    min-height: 50px;
 }
 
 .debug header .bottom{
     background-color: #00008B;
 }
 
-.icons{
-    display: flex;
-    justify-content: center;
-}
 
 .debug header .header .icon {
     background-color: #DAA520;
