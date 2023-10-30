@@ -31,6 +31,7 @@ html{
 header {
     background-color: #ADD8E6;
 }
+
 /* 
     HEADER-TOP
 */
@@ -107,12 +108,16 @@ flex-direction: row-reverse;
     FOOTER TOP
 */
 
+.footer-top{
+    background-color: #23272A;
+}
+
 .footer-top-container{
     min-height: 700px;
     display: flex;
     margin-top: 15px;
     margin-bottom: 40px;
-    border: 2px dashed black;
+    border: 1px dashed black;
 }
 
 .footer-top-container > div {
@@ -129,6 +134,32 @@ flex-direction: row-reverse;
     border: 1px dashed white;
     width: 25%;
 }
+
+/* 
+    FOOTER BOTTOM
+*/
+
+.footer-bottom{
+    min-height: 100px;
+    margin-top: 1px;
+    display: flex;
+}
+
+.footer-bottom > .container {
+    align-items: flex-end;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    width: 100%;
+    min-height: 75%;
+}
+
 /* 
     DEBUG HEADER
 */
@@ -184,12 +215,9 @@ flex-direction: row-reverse;
 }
 
 /* 
-    DEBUG FOOTER
+    DEBUG FOOTER TOP
 */
 
-.debug footer .footer-top{
-    background-color: #23272A;
-}
 
 .debug footer .footer-top .footer-top-container {
     border: 1px dashed black;
@@ -204,4 +232,30 @@ flex-direction: row-reverse;
 .debug footer .hero-aqua{
     background-color: #20B1A9;
     border: 1px dashed white;
+}
+
+/* 
+    DEBUG FOOTER BOTTOM
+*/
+
+.debug footer .footer-bottom{
+    background-color: #23272A;
+}
+
+.debug footer .footer-bottom .buttons {
+    background-color: #7FFFD3;
+}
+
+.logo{
+    background-color: #FFB6C1;
+    border: 1px dashed black;
+}
+
+button{
+    background-color: #FFB6C1;
+    border: 1px dashed black;
+}
+
+.logo, button {
+    padding: 4px;
 }
