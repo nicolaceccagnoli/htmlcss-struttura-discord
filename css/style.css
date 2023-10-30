@@ -21,3 +21,37 @@ html{
     margin: 0 auto;
     max-width: 1200px;
 }
+
+/* 
+    HEADER
+*/
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    flex-grow: calc(100% / 3);
+}
+
+/* 
+    DEBUG
+*/
+
+.debug .top{
+    background-color: #ADD8E6;
+}
+
+.debug header .bottom{
+    background-color: #00008B;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.debug header .header .icon {
+    background-color: #DAA520;
+    border: 1px dashed black;
+}
