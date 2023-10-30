@@ -92,6 +92,10 @@ header .bottom{
     min-height: 500px;
 }
 
+main > section:nth-of-type(2) > .container{
+flex-direction: row-reverse;
+}
+
 /* 
     DEBUG
 */
@@ -119,7 +123,7 @@ header .bottom{
 .debug main .container .hero-blue{
     background-color: #1C90FF;
     border: 1px dashed black;
-    min-height: 350px;
+    min-height: 450px;
     margin: 35px auto;
     width: 70%;
 }
@@ -127,7 +131,7 @@ header .bottom{
 .debug main .container .hero-pink{
     background-color: #FEC0CA;
     border: 1px dashed black;
-    min-height: 350px;
+    min-height: 450px;
     margin: 35px auto;
     width: 30%;
 }
