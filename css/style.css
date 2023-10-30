@@ -17,13 +17,22 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
-    margin: 0 auto;
-    max-width: 1200px;
-}
 
+
+.container{
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 /* 
     HEADER
+*/
+
+header {
+    background-color: #ADD8E6;
+}
+/* 
+    HEADER-TOP
 */
 
 .top{
@@ -34,7 +43,7 @@ html{
 
 .icons{
     display: flex;
-    width: 75%;
+    width: 100%;
 }
 
 .icon{
@@ -48,8 +57,31 @@ html{
 
 .icon:nth-of-type(2){
     flex-grow:2;
-    align-self: flex-end;
-    text-align: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+}
+
+li{
+    list-style: none;
+}
+
+/* 
+    HEADER BOTTOM
+*/
+
+header .bottom{
+    width: 100%;
+    display: flex;
+}
+
+.hero{
+    width: 50%;
+    margin: 35px auto;
 }
 
 /* 
@@ -57,16 +89,21 @@ html{
 */
 
 .debug header .top{
-    background-color: #ADD8E6;
     min-height: 50px;
+}
+
+.debug header .top .icon {
+    background-color: #DAA520;
+    border: 1px dashed black;
 }
 
 .debug header .bottom{
     background-color: #00008B;
+    min-height: 400px;
 }
 
-
-.debug header .header .icon {
-    background-color: #DAA520;
+.hero{
+    background-color: #EE81EE;
     border: 1px dashed black;
+    min-height: 75%;
 }
